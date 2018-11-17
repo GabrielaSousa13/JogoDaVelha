@@ -1,0 +1,15 @@
+.jogo{
+    border: solid black 4px;
+    height: 80vh;
+    width: 50vw;
+}
+
+.celula{
+    border: solid black 2px;
+    font-size: 50pt;
+    height: 30%;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+}
+
