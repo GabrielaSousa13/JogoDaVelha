@@ -1,7 +1,18 @@
+body {
+    background-color: rgb(107, 107, 145);
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(29, 6, 51);
+}
+
 .jogo{
     border: solid black 4px;
     height: 80vh;
     width: 50vw;
+    margin: auto;
 }
 
 .celula{

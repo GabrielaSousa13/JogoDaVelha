@@ -6,19 +6,22 @@ function verificaVitoria (tabela){
     for (let linha of linhas){
         let vencedor = verificaVencedor(linha);
         if (vencedor){
-            console.log(vencedor + " ganhou"); 
+            console.log(vencedor + " ganhou");
+            alert('Você ganhou o jogo!');
         }
     }
     for (let coluna of colunas){
         let vencedor = verificaVencedor(coluna);
         if (vencedor){
-            console.log(vencedor + " ganhou"); 
+            console.log(vencedor + " ganhou");
+            alert('Você ganhou o jogo!');
         }
     }
     for (let diagonal of diagonais){
         let vencedor = verificaVencedor(diagonal);
         if (vencedor){
-            console.log(vencedor + " ganhou"); 
+            console.log(vencedor + " ganhou");
+            alert('Você ganhou o jogo!');
         }
     }
 }
@@ -79,4 +82,5 @@ function montaDiagonal (celulas){
         }
     }
     return [diagonal1, diagonal2];
+
 }
