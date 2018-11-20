@@ -7,24 +7,31 @@ function verificaVitoria (tabela){
         let vencedor = verificaVencedor(linha);
         if (vencedor){
             console.log(vencedor + " ganhou");
-            alert('Você ganhou o jogo!');
+        if (confirm('Você ganhou o jogo! Gostaria de jogar novamente?')); {
+            history.go(0);
+         }
         }
     }
     for (let coluna of colunas){
         let vencedor = verificaVencedor(coluna);
         if (vencedor){
             console.log(vencedor + " ganhou");
-            alert('Você ganhou o jogo!');
+            if (confirm('Você ganhou o jogo! Gostaria de jogar novamente?')); {
+                history.go(0);
+            }
         }
     }
     for (let diagonal of diagonais){
         let vencedor = verificaVencedor(diagonal);
         if (vencedor){
             console.log(vencedor + " ganhou");
-            alert('Você ganhou o jogo!');
+            if (confirm('Você ganhou o jogo! Gostaria de jogar novamente?')); {
+                history.go(0);
+            }
         }
     }
 }
+
 
  function verificaVencedor (string){
     if (string == "XXX"){
@@ -84,3 +91,4 @@ function montaDiagonal (celulas){
     return [diagonal1, diagonal2];
 
 }
+
